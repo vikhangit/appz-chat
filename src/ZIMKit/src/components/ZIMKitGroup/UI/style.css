@@ -1,0 +1,39 @@
+.group-container {
+    box-sizing: border-box;
+    padding: 40px 32px 65px;
+    width: 272px;
+    height: 663px;
+    background-color: #fff;
+    border-radius: 0 0 8px 0;
+  }
+  .group-container .form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .group-container .form-box .id .label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: #394256;
+    line-height: 20px;
+  }
+  .group-container .form-box .id .value {
+    text-align: left;
+    padding-left: 12px;
+    width: 208px;
+    height: 44px;
+    background-color: #f4f5f8;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #18191a;
+    line-height: 44px;
+  }
+  .group-container .form-box .copy-btn {
+    width: 208px;
+    height: 44px;
+    line-height: 44px;
+  }
+  

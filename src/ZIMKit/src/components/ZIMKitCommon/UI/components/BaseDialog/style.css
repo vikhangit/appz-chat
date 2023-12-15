@@ -1,0 +1,80 @@
+.wrapper {
+    z-index: 102;/* 比播放遮罩层级高 */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .wrapper .dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+    box-sizing: border-box;
+    width: 340px;
+    min-height: 163px;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #28292e;
+  }
+  .wrapper .dialog .close-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .wrapper .dialog .close-icon::before,
+  .wrapper .dialog .close-icon::after {
+    position: absolute;
+    content: " ";
+    height: 12px;
+    width: 2px;
+    background-color: #fff;
+  }
+  .wrapper .dialog .close-icon::before {
+    transform: rotate(45deg);
+  }
+  .wrapper .dialog .close-icon::after {
+    transform: rotate(-45deg);
+  }
+  .wrapper .dialog .title {
+    font-size: 16px;
+  }
+  .wrapper .dialog .desc {
+    text-align: center;
+    width: 240px;
+    word-break: break-word;
+    line-height: 21px;
+  }
+  .wrapper .dialog .line {
+    margin: 20px 0;
+    width: 292px;
+    height: 1px;
+    background: #ebecec;
+  }
+  .wrapper .dialog .btn-box .cancel {
+    background-color: #fff;
+    color: #3478FC;
+    border: 1px solid #E8E8E8;
+    width: 100px;
+    height: 36px;
+  }
+  .wrapper .dialog .btn-box .confirm {
+    margin-left: 20px;
+    width: 100px;
+    height: 36px;
+  }
+  

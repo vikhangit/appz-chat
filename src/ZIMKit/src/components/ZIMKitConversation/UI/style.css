@@ -1,0 +1,268 @@
+.conversation {
+  display: flex;
+  width: 350px;
+  height: 720px;
+  background-color: #fff;
+  border-radius: 0 0 0 8px;
+}
+.conversation .left-banner {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 8px;
+  width: 70px;
+  height: 100%;
+  background-color: #f2f2f2;
+  border-radius: 0 0 0 8px;
+}
+.conversation .left-banner .item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 8px 0 6px;
+  width: 54px;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.conversation .left-banner .item .icon {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+.conversation .left-banner .item .message-icon {
+  background-image: url('../UI/resources/message-default.png');
+}
+.conversation .left-banner .item .create-chat-icon {
+  background-image: url('../UI/resources/create-chat-default.png');
+}
+.conversation .left-banner .item .exit-icon {
+  background-image: url('../UI/resources/exit-default.png');
+}
+.conversation .left-banner .item:hover .create-chat-text {
+  color: #3478fc;
+}
+.conversation .left-banner .item:hover .create-chat-icon {
+  background-image: url('../UI/resources/create-chat-hover.png');
+}
+.conversation .left-banner .item:hover .exit-text {
+  color: #ff4a50;
+}
+.conversation .left-banner .item:hover .exit-icon {
+  background-image: url('../UI/resources/exit-hover.png');
+}
+.conversation .left-banner .item .text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #666666;
+  line-height: 16px;
+  text-align: center;
+}
+.conversation .left-banner .item .total {
+  position: absolute;
+  top: -16px;
+  right: -14px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #FF4A50;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 50%;
+  transform: scale(0.5);
+  line-height: 40px;
+  text-align: center;
+}
+.conversation .left-banner .item:last-child {
+  margin-bottom: 0;
+}
+.conversation .conversation-content {
+  padding: 8px 8px 0 8px;
+  width: 280px;
+  overflow-y: auto;
+}
+.conversation .conversation-content .conversation-item {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  height: 68px;
+  border-radius: 5px;
+}
+.conversation .conversation-content .conversation-item.actived {
+  background: linear-gradient(270deg, #64b0fe 0%, #3478fc 100%);
+}
+.conversation
+  .conversation-content
+  .conversation-item.actived
+  .conversation-info
+  .item-message
+  .message-text {
+  color: #fff;
+}
+.conversation
+  .conversation-content
+  .conversation-item.actived
+  .conversation-info
+  .info-top
+  .item-name,
+.conversation
+  .conversation-content
+  .conversation-item.actived
+  .conversation-info
+  .info-top
+  .item-date {
+  color: #fff;
+}
+.conversation .conversation-content .conversation-item:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+.conversation .conversation-content .conversation-item .head-portrait {
+  position: relative;
+  flex-shrink: 0;
+  margin-right: 10px;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  line-height: 42px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.conversation .conversation-content .conversation-item .head-portrait img {
+  width: 100%;
+  height: 100%;
+}
+.conversation .conversation-content .conversation-item .head-portrait .group {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../ZIMKitCommon/UI/resources/avatar-group.png');
+  background-size: cover;
+}
+.conversation
+  .conversation-content
+  .conversation-item
+  .head-portrait
+  .unread-count {
+  position: absolute;
+  top: -18px;
+  right: -16px;
+  width: 40px;
+  height: 40px;
+  background-color: #FF4A50;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 50%;
+  transform: scale(0.5);
+  line-height: 40px;
+  text-align: center;
+}
+.conversation .conversation-content .conversation-item .conversation-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 44px;
+}
+.conversation
+  .conversation-content
+  .conversation-item
+  .conversation-info
+  .info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.conversation
+  .conversation-content
+  .conversation-item
+  .conversation-info
+  .info-top
+  .item-name {
+  max-width: 110px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #18191a;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.conversation
+  .conversation-content
+  .conversation-item
+  .conversation-info
+  .info-top
+  .item-date {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: #b8b8b8;
+  line-height: 17px;
+}
+.conversation
+  .conversation-content
+  .conversation-item
+  .conversation-info
+  .item-message {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+.conversation
+  .conversation-content
+  .conversation-item
+  .conversation-info
+  .item-message
+  .message-text {
+  max-width: 160px;
+  height: 18px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #b1b4bb;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.conversation .default-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #394256;
+}
+.conversation .default-content .text {
+  line-height: 22px;
+  text-align: center;
+  white-space: pre-wrap;
+}
+.conversation .abnormal-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.conversation .abnormal-content .reload-btn {
+  margin-top: 620px;
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.conversation .err-icon {
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+}
